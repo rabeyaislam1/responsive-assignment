@@ -15,10 +15,14 @@ body {
   max-width: 1200px;
   margin: 0, auto;
   font-weight: normal;
-  margin: 50px;
+  padding: 0px 30px;
+  margin-bottom: 21px;
+  margin-top: 20px;
 }
 
-/* navigation area */
+/*----******-------
+ navigation area 
+ -----*****--------*/
 
 nav {
   display: flex;
@@ -31,6 +35,7 @@ nav {
 }
 .nav-hed {
   font-size: 20px;
+  padding-left: 35px;
 }
 .nav-bar li {
   list-style: none;
@@ -42,7 +47,9 @@ nav {
   padding: 15px 10px;
 }
 
-/* first section */
+/*///////////////
+ first section 
+ /////////////*/
 
 .title {
   height: 100vh;
@@ -91,7 +98,9 @@ nav {
   box-shadow: 0 2px 0 rgb(3, 30, 70);
 }
 
-/* all company logo */
+/********************
+ all company logo 
+ *********************/
 
 .all-logo {
   display: grid;
@@ -100,4 +109,101 @@ nav {
   border-bottom: 2px solid rgb(235, 234, 233);
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+/*------------------
+ collection section 
+ ------------------*/
+
+.collection {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.collection h2 {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.collection-photo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 35px;
+}
+.section {
+  padding: 7px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: -3px 13px 18px -15px gray;
+}
+.section .photo img {
+  width: 240px;
+  height: 210px;
+}
+.photo-details {
+  line-height: 1.5;
+}
+.fa-star {
+  font-size: 12px;
+}
+.fa-star.filled {
+  color: tomato;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.see {
+  float: right;
+  margin-left: 85%;
+  text-decoration: none;
+  font-size: 20px;
+  color: purple;
+  padding-top: 10px;
+}
+/*//////////////
+    extra part  
+ ///////////////*/
+.last-part {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+}
+.left-part {
+  display: flex;
+  justify-content: center;
+}
+.left-part img {
+  width: 75%;
+  border-radius: 10px;
+}
+.right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+.right-part h1 {
+  font-size: 35px;
+}
+.right-part p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+/*---------------
+     footer section
+     ---------------*/
+.footer {
+  background-color: rgb(5, 37, 63);
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.5;
+}
+.fot {
+  padding-top: 5px;
 }

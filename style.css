@@ -164,6 +164,7 @@ nav {
 /*//////////////
     extra part  
  ///////////////*/
+
 .last-part {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -207,3 +208,7 @@ nav {
 .fot {
   padding-top: 5px;
 }
+
+/*-------////////////////----------
+ responsive part for phone 
+ -------////////////////-----------*/

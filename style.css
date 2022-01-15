@@ -37,6 +37,9 @@ nav {
   font-size: 20px;
   padding-left: 35px;
 }
+.nav-bar li i {
+  font-size: 30px;
+}
 .nav-bar li {
   list-style: none;
   margin: 10px;
@@ -46,13 +49,18 @@ nav {
   font-weight: 400;
   padding: 15px 10px;
 }
+#nav-toggler {
+  display: none;
+}
+.nav-toggler-icon {
+  display: none;
+}
 
 /*///////////////
  first section 
  /////////////*/
 
 .title {
-  height: 100vh;
   min-height: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -212,3 +220,113 @@ nav {
 /*-------////////////////----------
  responsive part for phone 
  -------////////////////-----------*/
+
+@media (max-width: 450px) {
+  .nav-hed {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    transform: translateY(-320px);
+    transition: 0.5s ease-in-out;
+  }
+  .nav-bar li i {
+    display: none;
+  }
+  .nav-toggler-icon {
+    display: block;
+    font-size: 20px;
+  }
+  #nav-toggler:checked ~ .nav-bar {
+    transform: translateY(0px);
+  }
+
+  .title-left {
+    order: 2;
+  }
+  .title {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .collection-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .last-part {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .see {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*--------////////////-----------
+     responsiv part for tab 
+---------////////////-----------*/
+
+@media (max-width: 750px) {
+  .nav-hed {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+  }
+  .nav-bar {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    transform: translateY(-340px);
+    transition: 0.5s ease-in-out;
+  }
+  .nav-toggler-icon {
+    display: block;
+    font-size: 20px;
+  }
+  .nav-bar li i {
+    display: none;
+  }
+  #nav-toggler:checked ~ .nav-bar {
+    transform: translateY(0px);
+  }
+  .title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .title-right img {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .title-left h1 {
+    font-size: 30px;
+  }
+  .title-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .title-left p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  .collection-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .last-part {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

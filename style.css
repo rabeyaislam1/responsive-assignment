@@ -165,9 +165,15 @@ nav {
   float: right;
   margin-left: 85%;
   text-decoration: none;
-  font-size: 20px;
   color: purple;
+  font-size: 20px;
   padding-top: 10px;
+}
+.see-link {
+  text-decoration: none;
+  margin-left: 0px;
+  margin-top: 30px;
+  color: purple;
 }
 /*//////////////
     extra part  
@@ -266,6 +272,12 @@ nav {
   .see {
     display: flex;
     justify-content: center;
+    margin-left: -100px;
+  }
+  .all-logo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
   }
 }
 
@@ -327,5 +339,10 @@ nav {
   .last-part {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .all-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
   }
 }

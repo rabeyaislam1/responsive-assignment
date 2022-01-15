@@ -253,7 +253,7 @@ nav {
   .title {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+    /* justify-content: center; */
   }
   .collection-photo {
     display: grid;
@@ -272,8 +272,7 @@ nav {
 /*--------////////////-----------
      responsiv part for tab 
 ---------////////////-----------*/
-
-@media (max-width: 750px) {
+@media only screen and (min-width: 452px) and (max-width: 750px) {
   .nav-hed {
     display: flex;
     text-align: center;
